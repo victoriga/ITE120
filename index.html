@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<link href="../Style/style.css" rel="stylesheet" style="text/css"  />
+<style>
+		@-webkit-keyframes move {
+    from {
+		-webkit-transform:translate(0px,0px) rotate(0deg);
+		}
+    to {
+		-webkit-transform:translate(100px,100px) rotate(0deg);
+		}
+}
+	.move {
+		width: 100px;
+		height: 100px;
+		
+		background-color: orange;
+		animation-name: move;
+		animation-duration: 4s;
+		animation-iteration-count: 3;
+		animation-direction: forward;}
+	
+	@-webkit-keyframes cross {
+		 	from {
+			-webkit-transform:translate(150px,150px) rotate(0deg);
+			}
+			to {
+			-webkit-transform:translate(100px,100px) rotate(50deg);
+			}	
+		}
+		.cross {
+			
+			top: 100px;
+			left: 100px;
+			width: 100px;
+			background-color: #939;
+			animation-name: cross;
+			animation-iteration-count:2;
+			-webkit-animation-duration: 4s;}
+
+</style>
+
+</head>
+
+<body>
+	
+    <video controls width= "320px" height = "240px">
+    <source src="../Video/sample-mp4.mp4" type="video/mp4" />
+    <source src="../Video/sample-webm.webm" type="video/webm" />
+    <source src="../Video/sample-ogv.ogv" type="video/ogg" />
+   Your browser is not support video tag.						
+  </video>
+    
+    <div id="vid">
+    <p>This is blue</p>
+    </div>
+    
+    <div class="move">
+    <p>Move me around!!!</p>
+    </div>
+    
+    <div class="cross">
+    <p>Around!!!</p>
+    </div>
+    
+</body>
+</html>
